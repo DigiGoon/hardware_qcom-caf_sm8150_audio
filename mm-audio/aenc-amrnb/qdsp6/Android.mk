@@ -32,6 +32,8 @@ LOCAL_VENDOR_MODULE     := true
 LOCAL_CFLAGS            := $(libOmxAmrEnc-def)
 LOCAL_CFLAGS            := -Wno-format -Wno-sign-compare -Wno-sign-conversion -Wno-self-assign -Wno-parentheses-equality -Wno-tautological-compare
 LOCAL_C_INCLUDES        := $(libOmxAmrEnc-inc)
+LOCAL_C_INCLUDES        += $(TOP)/hardware/qcom-caf/sm8150/media/mm-core/inc
+LOCAL_C_INCLUDES        += $(TOP)/hardware/qcom-caf/sm8150/media/mm-core/omxcore/inc
 LOCAL_PRELINK_MODULE    := false
 LOCAL_SHARED_LIBRARIES  := libutils liblog
 
